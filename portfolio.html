@@ -1,0 +1,2436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sai Mahesh Talabattula - .NET Full Stack Developer portfolio">
+<title>Sai Mahesh | .NET Full Stack Developer</title>
+<style>
+.projects-section {
+
+    padding: 120px 7%;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(0,245,255,0.05),
+            transparent 35%
+        );
+
+}
+
+
+/* HEADER */
+
+.projects-header {
+
+    max-width: 800px;
+
+    margin-bottom: 70px;
+
+}
+
+.section-code {
+
+    font-family: monospace;
+
+    color: #00f5ff;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+}
+
+.projects-header h2 {
+
+    font-size: 48px;
+
+    margin: 12px 0;
+
+}
+
+.projects-header h2 span {
+
+    color: #00f5ff;
+
+}
+
+.projects-header p {
+
+    color: rgba(255,255,255,0.6);
+
+    line-height: 1.8;
+
+}
+
+
+/* FEATURED PROJECT */
+
+.featured-project {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    padding: 40px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 28px;
+
+    background: rgba(255,255,255,0.025);
+
+    backdrop-filter: blur(15px);
+
+    margin-bottom: 50px;
+
+}
+
+
+/* BROWSER */
+
+.browser-window {
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    background: #080b12;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.4);
+
+}
+
+.browser-top {
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 15px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.08);
+
+}
+
+.browser-top > span {
+
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.25);
+
+}
+
+.browser-url {
+
+    margin-left: 15px;
+
+    flex: 1;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    color: rgba(255,255,255,0.4);
+
+}
+
+
+/* DASHBOARD */
+
+.browser-content {
+
+    display: flex;
+
+    min-height: 330px;
+
+}
+
+.dashboard-sidebar {
+
+    width: 65px;
+
+    border-right:
+        1px solid rgba(255,255,255,0.08);
+
+    padding: 20px 10px;
+
+}
+
+.sidebar-logo {
+
+    text-align: center;
+
+    color: #00f5ff;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+
+}
+
+.sidebar-item {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 12px auto;
+
+    color: rgba(255,255,255,0.4);
+
+}
+
+.sidebar-item.active {
+
+    color: #00f5ff;
+
+    background: rgba(0,245,255,0.08);
+
+    border-radius: 10px;
+
+}
+
+.dashboard-main {
+
+    flex: 1;
+
+    padding: 25px;
+
+}
+
+.dashboard-title {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+}
+
+.dashboard-cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 10px;
+
+}
+
+.dashboard-cards div {
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.04);
+
+}
+
+.dashboard-cards small {
+
+    display: block;
+
+    font-size: 9px;
+
+    color: rgba(255,255,255,0.4);
+
+}
+
+.dashboard-cards strong {
+
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 18px;
+
+}
+
+.dashboard-chart {
+
+    height: 120px;
+
+    margin-top: 20px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,245,255,0.08),
+            transparent
+        );
+
+    position: relative;
+
+}
+
+.chart-line {
+
+    position: absolute;
+
+    left: 10%;
+
+    right: 10%;
+
+    top: 55%;
+
+    height: 2px;
+
+    background: #00f5ff;
+
+    transform:
+        rotate(-6deg);
+
+}
+
+
+/* PROJECT INFORMATION */
+
+.project-number {
+
+    font-family: monospace;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #00f5ff;
+
+}
+
+.project-information h3 {
+
+    font-size: 35px;
+
+    line-height: 1.2;
+
+    margin: 15px 0;
+
+}
+
+.project-information h3 span {
+
+    color: #00f5ff;
+
+}
+
+.project-description {
+
+    color: rgba(255,255,255,0.65);
+
+    line-height: 1.8;
+
+}
+
+
+/* ARCHITECTURE */
+
+.architecture-box {
+
+    margin: 25px 0;
+
+    padding: 20px;
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 15px;
+
+    background: rgba(0,0,0,0.15);
+
+}
+
+.architecture-title {
+
+    font-size: 12px;
+
+    color: #00f5ff;
+
+    margin-bottom: 20px;
+
+}
+
+.architecture-flow {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+.architecture-node {
+
+    padding: 12px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.04);
+
+    min-width: 90px;
+
+}
+
+.architecture-node i {
+
+    display: block;
+
+    color: #00f5ff;
+
+    margin-bottom: 6px;
+
+}
+
+.architecture-node span {
+
+    display: block;
+
+    font-size: 11px;
+
+}
+
+.architecture-node small {
+
+    font-size: 8px;
+
+    color: rgba(255,255,255,0.4);
+
+}
+
+.architecture-arrow {
+
+    color: #00f5ff;
+
+}
+
+
+/* TECHNOLOGIES */
+
+.technology-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin: 25px 0;
+
+}
+
+.technology-list span,
+.card-tech span {
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    background: rgba(0,245,255,0.06);
+
+    color: #00f5ff;
+
+    border:
+        1px solid rgba(0,245,255,0.12);
+
+}
+
+
+/* DETAILS */
+
+.project-details {
+
+    display: grid;
+
+    gap: 15px;
+
+}
+
+.detail-item {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+.detail-item > i {
+
+    color: #00f5ff;
+
+    margin-top: 4px;
+
+}
+
+.detail-item small {
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    opacity: 0.5;
+
+}
+
+.detail-item p {
+
+    margin: 5px 0 0;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: rgba(255,255,255,0.6);
+
+}
+
+
+/* BUTTONS */
+
+.project-actions {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+.project-btn {
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+
+    border: 0;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+}
+
+.project-btn.primary {
+
+    background: #00f5ff;
+
+    color: #000;
+
+}
+
+.project-btn.secondary {
+
+    border:
+        1px solid rgba(255,255,255,0.15);
+
+    color: white;
+
+    background: transparent;
+
+}
+
+.project-btn:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* PROJECT GRID */
+
+.project-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 25px;
+
+}
+
+.project-card {
+
+    padding: 30px;
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.025);
+
+    transition: 0.35s;
+
+}
+
+.project-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(0,245,255,0.25);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.25);
+
+}
+
+.project-card-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.project-index {
+
+    font-family: monospace;
+
+    color: rgba(255,255,255,0.35);
+
+}
+
+.project-icon {
+
+    font-size: 25px;
+
+    color: #00f5ff;
+
+}
+
+.project-card h3 {
+
+    font-size: 23px;
+
+    margin: 25px 0 12px;
+
+}
+
+.project-card p {
+
+    color: rgba(255,255,255,0.6);
+
+    line-height: 1.7;
+
+    font-size: 13px;
+
+}
+
+.card-tech {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin: 20px 0;
+
+}
+
+.card-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.07);
+
+    font-size: 11px;
+
+}
+
+.card-footer span {
+
+    color: rgba(255,255,255,0.45);
+
+}
+
+.card-footer a {
+
+    color: #00f5ff;
+
+    text-decoration: none;
+
+}
+
+
+
+/* PROJECT DETAILS MODAL */
+
+.view-btn {
+    border: 0;
+    background: transparent;
+    color: #00f5ff;
+    font: inherit;
+    font-size: 11px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.view-btn:hover {
+    color: white;
+    transform: translateX(4px);
+}
+
+.project-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    padding: 40px 20px;
+    overflow-y: auto;
+    background: rgba(5, 8, 22, .88);
+    backdrop-filter: blur(12px);
+}
+
+.project-modal.open {
+    display: block;
+}
+
+.modal-content {
+    position: relative;
+    width: min(900px, 100%);
+    margin: 35px auto;
+    padding: 42px;
+    border: 1px solid rgba(0,245,255,.18);
+    border-radius: 22px;
+    background: #0e1730;
+    box-shadow: 0 30px 90px rgba(0,0,0,.55);
+    animation: modalIn .25s ease;
+}
+
+@keyframes modalIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-btn {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background: #00f5ff;
+    color: #06101d;
+}
+
+.modal-number {
+    color: #00f5ff;
+    font: 11px monospace;
+    letter-spacing: 2px;
+}
+
+.modal-content h2 {
+    color: white;
+    margin: 12px 0 16px;
+}
+
+.modal-intro {
+    color: rgba(255,255,255,.68);
+    line-height: 1.8;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.detail-section {
+    margin-top: 28px;
+}
+
+.detail-section h3 {
+    color: #00f5ff;
+    margin-bottom: 10px;
+}
+
+.detail-section p,
+.detail-section li {
+    color: rgba(255,255,255,.65);
+    line-height: 1.8;
+}
+
+.detail-section ul {
+    padding-left: 20px;
+}
+
+.modal-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.modal-tech span {
+    padding: 7px 11px;
+    border-radius: 20px;
+    background: rgba(0,245,255,.06);
+    color: #00f5ff;
+    border: 1px solid rgba(0,245,255,.12);
+    font-size: 11px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+
+    .featured-project {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media(max-width: 650px) {
+
+    .projects-section {
+
+        padding: 80px 5%;
+
+    }
+
+    .projects-header h2 {
+
+        font-size: 36px;
+
+    }
+
+    .project-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .featured-project {
+
+        padding: 20px;
+
+    }
+
+    .architecture-flow {
+
+        flex-direction: column;
+
+    }
+
+    .architecture-arrow {
+
+        transform: rotate(90deg);
+
+    }
+
+    .dashboard-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+:root{
+ --bg:#050816;--panel:#0b1022;--panel2:#0e1730;--line:#1c2947;--text:#e9f2ff;
+ --muted:#8ea2c4;--cyan:#42d9ff;--violet:#9b7cff;--green:#56e39f;--danger:#ff6b8a;
+ --shadow:0 25px 80px rgba(0,0,0,.38);--radius:18px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:
+radial-gradient(circle at 15% 10%,rgba(66,217,255,.10),transparent 26%),
+radial-gradient(circle at 85% 25%,rgba(155,124,255,.10),transparent 28%),var(--bg);
+color:var(--text);font:15px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(5,8,22,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.12em}.brand i{color:var(--cyan);font-style:normal}
+.links{display:flex;gap:22px;color:var(--muted);font-size:13px}.links a:hover{color:var(--cyan)}
+section{padding:100px 0}.hero{min-height:100vh;padding-top:120px;display:grid;align-items:center}
+.heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);padding:7px 11px;border-radius:99px;color:var(--cyan);background:#081126;font-size:12px;font-weight:800}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 15px var(--green)}
+h1{font-size:clamp(48px,7vw,88px);line-height:.95;letter-spacing:-.065em;margin:22px 0}
+.grad{background:linear-gradient(90deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.heroLead{font-size:18px;color:var(--muted);max-width:680px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:11px 16px;border:1px solid var(--line);border-radius:12px;font-weight:800}.primary{border:0;background:linear-gradient(135deg,var(--cyan),var(--violet));color:#06101d}.btn:hover{transform:translateY(-2px)}
+.terminal{background:#070b18;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.termTop{padding:11px 14px;border-bottom:1px solid var(--line);display:flex;gap:7px}.bubble{width:9px;height:9px;border-radius:50%;background:#293653}
+.termBody{padding:22px;font:13px/1.8 ui-monospace,SFMono-Regular,Consolas,monospace;min-height:340px;color:#b9c8e5}
+.c{color:var(--cyan)}.g{color:var(--green)}.v{color:#c0aaff}.m{color:#6e82a7}
+.prompt{color:var(--green)}#typed{white-space:pre-wrap}
+.sectionTag{color:var(--cyan);font:800 11px ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase}
+h2{font-size:clamp(30px,4vw,50px);letter-spacing:-.04em;margin:8px 0 16px}.intro{color:var(--muted);max-width:800px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,rgba(14,23,48,.92),rgba(9,14,31,.92));border:1px solid var(--line);border-radius:var(--radius);padding:23px;box-shadow:0 15px 45px rgba(0,0,0,.15)}
+.card:hover{border-color:#314a7b;transform:translateY(-3px);transition:.2s}.icon{font-size:25px;margin-bottom:12px}.card h3{margin:0 0 8px}.muted{color:var(--muted)}
+.stack{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.tag{padding:7px 10px;border:1px solid #223456;background:#09142a;border-radius:9px;color:#cce3ff;font:12px ui-monospace,monospace}
+.arch{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:center;margin-top:35px}.node{padding:22px 10px;text-align:center;border:1px solid var(--line);border-radius:15px;background:#0a1227}.arrow{text-align:center;color:var(--cyan);font-size:22px}
+.code{background:#060a15;border:1px solid var(--line);border-radius:16px;overflow:hidden}.codeHead{padding:10px 14px;border-bottom:1px solid var(--line);color:var(--muted);font:12px monospace}.code pre{padding:20px;margin:0;overflow:auto;font:13px/1.75 ui-monospace,monospace;color:#c8d6ef}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.projectTitle{display:flex;justify-content:space-between;gap:15px;align-items:flex-start}.status{color:var(--green);font:11px monospace;border:1px solid #244b3e;padding:5px 8px;border-radius:99px}
+ul{color:var(--muted);padding-left:19px}.project li{margin:7px 0}
+.api .request{display:flex;gap:8px;margin:15px 0}.api select,.api input{background:#070d1d;border:1px solid var(--line);color:var(--text);padding:10px;border-radius:9px}.api input{flex:1}.response{background:#050914;border:1px solid var(--line);padding:15px;border-radius:12px;min-height:150px;font:12px/1.7 monospace;color:#b9c8e5}
+.metric{margin:16px 0}.metricTop{display:flex;justify-content:space-between;font-size:12px}.bar{height:7px;background:#131d34;border-radius:9px;overflow:hidden;margin-top:7px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--violet));border-radius:9px}
+.timeline{border-left:1px solid var(--line);padding-left:28px}.event{position:relative;margin-bottom:30px}.event:before{content:"";position:absolute;left:-34px;top:8px;width:10px;height:10px;background:var(--cyan);border-radius:50%;box-shadow:0 0 0 5px #0a1730}.date{color:var(--cyan);font:12px monospace}
+.contact{background:linear-gradient(135deg,rgba(66,217,255,.08),rgba(155,124,255,.08));border:1px solid var(--line);border-radius:22px;padding:35px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:12px}
+@media(max-width:850px){.links{display:none}.heroGrid,.two{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.arch{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}section{padding:75px 0}h1{font-size:49px}}
+.architecture-section {
+    padding: 100px 0;
+    background:
+        radial-gradient(circle at 85% 15%, rgba(155,124,255,.08), transparent 30%),
+        var(--bg);
+}
+.architecture-section .section-header,
+.architecture-section .architecture-grid,
+.architecture-section .architecture-flow,
+.architecture-section .recruiter-answer {
+    width: min(1180px, 92%);
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-header {
+    max-width: 800px;
+    margin-bottom: 45px;
+}
+.section-tag {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+.section-header h2 {
+    font-size: clamp(30px,4vw,50px);
+    letter-spacing: -.04em;
+    margin: 8px 0 16px;
+    color: var(--text);
+}
+.section-header p {
+    color: var(--muted);
+    line-height: 1.7;
+    font-size: 16px;
+}
+.architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+.architecture-card {
+    background: linear-gradient(145deg,rgba(14,23,48,.92),rgba(9,14,31,.92));
+    padding: 23px;
+    border-radius: 18px;
+    border: 1px solid var(--line);
+    box-shadow: 0 15px 45px rgba(0,0,0,.15);
+    transition: transform .2s ease, border-color .2s ease;
+}
+.architecture-card:hover {
+    transform: translateY(-3px);
+    border-color: #314a7b;
+}
+.architecture-icon {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+.architecture-card h3 {
+    margin: 0 0 8px;
+    color: var(--text);
+}
+.architecture-card p {
+    color: var(--muted);
+    line-height: 1.6;
+    font-size: 14px;
+}
+.architecture-card span {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 10px;
+    border: 1px solid #223456;
+    background: #09142a;
+    border-radius: 9px;
+    color: #cce3ff;
+    font-size: 12px;
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    font-weight: 600;
+}
+.architecture-flow {
+    margin-top: 45px;
+    padding: 25px;
+    background: #070b18;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.flow-item {
+    padding: 13px 20px;
+    background: #0a1227;
+    border: 1px solid var(--line);
+    color: var(--text);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.flow-arrow {
+    color: var(--cyan);
+    font-size: 22px;
+}
+.recruiter-answer {
+    margin-top: 35px;
+    padding: 30px;
+    background: linear-gradient(145deg,rgba(14,23,48,.92),rgba(9,14,31,.92));
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--cyan);
+    border-radius: 12px;
+}
+.recruiter-answer h3 {
+    margin-bottom: 12px;
+    color: var(--text);
+}
+.recruiter-answer p {
+    color: var(--muted);
+    line-height: 1.8;
+    margin: 0;
+}
+@media (max-width: 1000px) {
+    .architecture-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .architecture-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-header h2 {
+        font-size: 32px;
+    }
+}
+.certifications {
+    padding: 80px 60px;
+    background: #050816;
+}
+.section-label {
+    color: #00d9ff;
+    font-family: monospace;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.certifications h2 {
+    color: #eef4ff;
+    font-size: 58px;
+    margin: 0 0 45px;
+    letter-spacing: -2px;
+}
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.cert-card {
+    position: relative;
+    min-height: 160px;
+    padding: 34px 30px;
+    background: #0a1226;
+    border: 1px solid #243453;
+    border-radius: 22px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.cert-card:hover {
+    transform: translateY(-6px);
+    border-color: #00d9ff;
+    box-shadow: 0 15px 40px rgba(0, 217, 255, 0.12);
+}
+.cert-card h3 {
+    margin: 0 0 25px;
+    color: #eef4ff;
+    font-size: 22px;
+}
+.cert-card p {
+    margin: 0;
+    color: #8fb4e8;
+    font-size: 17px;
+}
+.cert-link {
+    display: block;
+    margin-top: 25px;
+    color: #00d9ff;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: 0.3s ease;
+}
+.cert-card:hover .cert-link {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (max-width: 900px) {
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+    .certifications {
+        padding: 60px 25px;
+    }
+    .certifications h2 {
+        font-size: 42px;
+    }
+}
+
+/* CLICKABLE / EXPANDABLE CARDS */
+[data-info] {
+    cursor: pointer;
+    outline: none;
+}
+[data-info]:focus-visible {
+    box-shadow: 0 0 0 2px var(--cyan);
+}
+.info-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--cyan);
+}
+[data-info]:hover .info-hint,
+[data-info]:focus-visible .info-hint {
+    color: white;
+}
+.node[data-info] {
+    transition: transform .2s ease, border-color .2s ease;
+}
+.node[data-info]:hover {
+    transform: translateY(-3px);
+    border-color: #314a7b;
+}
+
+/* GENERIC INFO MODAL (reuses .project-modal chrome) */
+#infoModal .modal-content {
+    width: min(640px, 100%);
+}
+#infoModal .modal-tag {
+    color: var(--cyan);
+    font: 11px ui-monospace, monospace;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#infoModal h2 {
+    font-size: 28px;
+}
+#infoModal .modal-body p {
+    color: rgba(255,255,255,.68);
+    line-height: 1.8;
+    margin: 0 0 14px;
+}
+#infoModal .modal-body ul {
+    color: rgba(255,255,255,.68);
+    line-height: 1.8;
+    padding-left: 20px;
+    margin: 0 0 14px;
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav">
+  <a class="brand" href="#top">SAI<i>_</i>MAHESH</a>
+  <div class="links"><a href="#projects">Projects</a><a href="#stack">Stack</a><a href="#architecture">Architecture</a><a href="#api">API</a><a href="#prajna-architecture">Prajna Architecture</a><a href="#engineering">Engineering</a><a href="#career">Career</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<main id="top">
+<section class="hero"><div class="wrap heroGrid">
+<div>
+  <span class="eyebrow"><span class="dot"></span> OPEN TO OPPORTUNITIES · 5+ YEARS</span>
+  <h1>Building software<br><span class="grad">end to end.</span></h1>
+  <p class="heroLead">Sai Mahesh Talabattula — .NET Full Stack Developer focused on C#, ASP.NET MVC/Web API, Entity Framework, SQL Server, Angular, JavaScript and scalable application engineering.</p>
+  <div class="btns"><a class="btn primary" href="assets/resume/Mahesh_Resume.pdf" target="_blank" download>↓ Download Resume</a><a class="btn" href="#projects">Explore Projects →</a><a class="btn" href="mailto:tsm8555@gmail.com">Contact →</a></div>
+</div>
+<div class="terminal">
+  <div class="termTop"><span class="bubble"></span><span class="bubble"></span><span class="bubble"></span></div>
+  <div class="termBody"><span class="prompt">sai@portfolio:~$</span> <span id="typed"></span><span class="c">▌</span></div>
+</div>
+</div></section>
+<!-- =========================================================
+     PROJECTS SECTION
+========================================================= -->
+
+<section id="projects" class="projects-section">
+
+<div class="projects-header">
+    <span class="section-code">Projects</span>
+
+    <h2>
+          Featured Projects
+    </h2>
+
+    <p>
+        Selected software projects demonstrating my experience
+        in full-stack development, database design and enterprise
+        application development.
+    </p>
+</div>
+
+
+<!-- ================= FEATURED PROJECT ================= -->
+
+<article class="featured-project">
+
+    <!-- Project Visual -->
+    <div class="project-visual">
+
+        <div class="browser-window">
+
+            <div class="browser-top">
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <div class="browser-url">
+                    localhost / prajna-schools-colleges
+                </div>
+            </div>
+
+            <div class="browser-content">
+
+                <div class="dashboard-sidebar">
+                    <div class="sidebar-logo">CMS</div>
+
+                    <div class="sidebar-item active">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fas fa-users"></i>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+
+                <div class="dashboard-main">
+
+                    <div class="dashboard-title">
+                        Prajna Schools & Colleges
+                    </div>
+
+                    <div class="dashboard-cards">
+
+                        <div>
+                            <small>Total Users</small>
+                            <strong>2,450</strong>
+                        </div>
+
+                        <div>
+                            <small>Applications</small>
+                            <strong>1,284</strong>
+                        </div>
+
+                        <div>
+                            <small>Reports</small>
+                            <strong>86</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-chart">
+                        <div class="chart-line"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Project Information -->
+
+    <div class="project-information">
+
+        <span class="project-number">01 / FEATURED PROJECT</span>
+
+        <h3>
+            Enterprise Management
+            <span>System</span>
+        </h3>
+
+        <p class="project-description">
+            A full-stack enterprise web application designed to
+            manage users, records, transactions, reports and
+            business operations through a centralized platform.
+        </p>
+
+
+        <!-- Architecture -->
+
+        <div class="architecture-box">
+
+            <div class="architecture-title">
+                <i class="fas fa-sitemap"></i>
+                Application Architecture
+            </div>
+
+            <div class="architecture-flow">
+
+                <div class="architecture-node">
+                    <i class="fas fa-desktop"></i>
+                    <span>Frontend</span>
+                    <small>HTML · CSS · JS</small>
+                </div>
+
+                <div class="architecture-arrow">
+                    →
+                </div>
+
+                <div class="architecture-node">
+                    <i class="fas fa-server"></i>
+                    <span>Backend</span>
+                    <small>ASP.NET · C#</small>
+                </div>
+
+                <div class="architecture-arrow">
+                    →
+                </div>
+
+                <div class="architecture-node">
+                    <i class="fas fa-database"></i>
+                    <span>Database</span>
+                    <small>SQL Server</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Technologies -->
+
+        <div class="technology-list">
+
+            <span>C#</span>
+            <span>ASP.NET MVC</span>
+            <span>JavaScript</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>SQL Server</span>
+            <span>SSRS</span>
+
+        </div>
+
+
+        <!-- Project Details -->
+
+        <div class="project-details">
+
+            <div class="detail-item">
+
+                <i class="fas fa-bullseye"></i>
+
+                <div>
+                    <small>OBJECTIVE</small>
+                    <p>
+                        Automate business processes and provide
+                        a centralized platform for managing
+                        application data.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <i class="fas fa-code"></i>
+
+                <div>
+                    <small>MY ROLE</small>
+                    <p>
+                        Full Stack Development, database design,
+                        API integration and application maintenance.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="detail-item">
+
+                <i class="fas fa-layer-group"></i>
+
+                <div>
+                    <small>KEY FEATURES</small>
+                    <p>
+                        Authentication, role-based access,
+                        CRUD operations, reports, file uploads
+                        and database-driven modules.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="project-actions">
+
+            <button type="button" class="project-btn primary" onclick="openProject('enterpriseProject')">
+                <i class="fas fa-eye"></i>
+                View Project
+            </button>
+
+            <a href="#" class="project-btn secondary">
+                <i class="fab fa-github"></i>
+                Source Code
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+<!-- ================= PROJECT GRID ================= -->
+
+<div class="project-grid">
+
+
+    <!-- PROJECT 02 -->
+
+    <article class="project-card">
+
+        <div class="project-card-top">
+
+            <span class="project-index">
+                02
+            </span>
+
+            <i class="fas fa-graduation-cap project-icon"></i>
+
+        </div>
+
+        <h3>
+            Student Management
+            Platform
+        </h3>
+
+        <p>
+            Web-based application for managing student information,
+            academic records, attendance and administrative operations.
+        </p>
+
+        <div class="card-tech">
+
+            <span>ASP.NET MVC</span>
+            <span>C#</span>
+            <span>SQL Server</span>
+            <span>JavaScript</span>
+
+        </div>
+
+        <div class="card-footer">
+
+            <span>
+                <i class="fas fa-layer-group"></i>
+                Full Stack
+            </span>
+
+            <button type="button" class="view-btn" onclick="openProject('studentProject')">View →</button>
+
+        </div>
+
+    </article>
+
+
+    <!-- PROJECT 03 -->
+
+    <article class="project-card">
+
+        <div class="project-card-top">
+
+            <span class="project-index">
+                03
+            </span>
+
+            <i class="fas fa-file-invoice-dollar project-icon"></i>
+
+        </div>
+
+        <h3>
+            Fee Management
+            System
+        </h3>
+
+        <p>
+            Database-driven application for managing student fees,
+            payments, transactions, receipts and financial reports.
+        </p>
+
+        <div class="card-tech">
+
+            <span>C#</span>
+            <span>ASP.NET</span>
+            <span>SQL Server</span>
+            <span>SSRS</span>
+
+        </div>
+
+        <div class="card-footer">
+
+            <span>
+                <i class="fas fa-database"></i>
+                Database
+            </span>
+
+            <button type="button" class="view-btn" onclick="openProject('feeProject')">View →</button>
+
+        </div>
+
+    </article>
+
+
+    <!-- PROJECT 04 -->
+
+    <article class="project-card">
+
+        <div class="project-card-top">
+
+            <span class="project-index">
+                04
+            </span>
+
+            <i class="fas fa-bell project-icon"></i>
+
+        </div>
+
+        <h3>
+            Notification &
+            Communication System
+        </h3>
+
+        <p>
+            Application for sending notifications and managing
+            communication between administrators, staff and users.
+        </p>
+
+        <div class="card-tech">
+
+            <span>ASP.NET</span>
+            <span>C#</span>
+            <span>SQL Server</span>
+            <span>JavaScript</span>
+
+        </div>
+
+        <div class="card-footer">
+
+            <span>
+                <i class="fas fa-plug"></i>
+                Integration
+            </span>
+
+            <button type="button" class="view-btn" onclick="openProject('notificationProject')">View →</button>
+
+        </div>
+
+    </article>
+
+
+    <!-- PROJECT 05 -->
+
+    <article class="project-card">
+
+        <div class="project-card-top">
+
+            <span class="project-index">
+                05
+            </span>
+
+            <i class="fas fa-chart-pie project-icon"></i>
+
+        </div>
+
+        <h3>
+            Reporting &
+            Analytics System
+        </h3>
+
+        <p>
+            Reporting platform providing structured business
+            reports and analytical information using SQL Server
+            and SSRS.
+        </p>
+
+        <div class="card-tech">
+
+            <span>SQL Server</span>
+            <span>SSRS</span>
+            <span>ASP.NET</span>
+            <span>C#</span>
+
+        </div>
+
+        <div class="card-footer">
+
+            <span>
+                <i class="fas fa-chart-bar"></i>
+                Analytics
+            </span>
+
+            <button type="button" class="view-btn" onclick="openProject('reportingProject')">View →</button>
+
+        </div>
+
+    </article>
+
+</div>
+
+</section>
+
+
+<!-- ================= PROJECT DETAIL MODALS ================= -->
+
+<!-- Enterprise Management System Modal -->
+<div id="enterpriseProject" class="project-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="enterpriseProjectTitle">
+        <button type="button" class="close-btn" onclick="closeProject('enterpriseProject')" aria-label="Close project details">×</button>
+
+        <div class="modal-number">01 / PROJECT DETAILS</div>
+        <h2 id="enterpriseProjectTitle">Enterprise Management System</h2>
+
+        <p class="modal-intro">
+            A full-stack enterprise web application designed to manage
+            users, records, transactions, reports and business operations
+            through a centralized platform.
+        </p>
+
+        <div class="detail-section">
+            <h3>Project Overview</h3>
+            <p>
+                A centralized enterprise platform used to manage core business
+                data across users, transactions and reports. The application
+                automates day-to-day operations and gives administrators a
+                single place to control access, records and reporting.
+            </p>
+        </div>
+
+        <div class="detail-section">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Authentication and role-based access control.</li>
+                <li>Full CRUD operations across core business modules.</li>
+                <li>Automated report generation and file uploads.</li>
+                <li>Database-driven, modular application design.</li>
+                <li>Centralized administration dashboard.</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h3>My Contribution</h3>
+            <p>
+                Owned full stack development end to end — database design,
+                ASP.NET MVC application layer, REST API integration and
+                ongoing application maintenance.
+            </p>
+        </div>
+
+        <div class="detail-section">
+            <h3>Architecture & Technologies</h3>
+            <div class="modal-tech">
+                <span>C#</span>
+                <span>ASP.NET MVC</span>
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>SQL Server</span>
+                <span>SSRS</span>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <h3>Technical Highlights</h3>
+            <p>
+                Layered architecture with a clear separation between the
+                frontend, ASP.NET/C# application layer and SQL Server database,
+                supporting role-based access and centralized reporting via SSRS.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Student Management Platform Modal -->
+<div id="studentProject" class="project-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="studentProjectTitle">
+        <button type="button" class="close-btn" onclick="closeProject('studentProject')" aria-label="Close project details">×</button>
+
+        <div class="modal-number">02 / PROJECT DETAILS</div>
+        <h2 id="studentProjectTitle">Student Management Platform</h2>
+
+        <p class="modal-intro">
+            Web-based application for managing student information,
+            academic records, attendance and administrative operations.
+        </p>
+
+        <div class="detail-section">
+            <h3>Project Overview</h3>
+            <p>
+                A student-focused module used by administrators and staff to
+                maintain student profiles, academic records and attendance in
+                one centralized system, reducing manual record-keeping.
+            </p>
+        </div>
+
+        <div class="detail-section">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Student profile and academic record management.</li>
+                <li>Attendance tracking and reporting.</li>
+                <li>Administrative workflows for staff and admins.</li>
+                <li>Database-driven record storage and retrieval.</li>
+                <li>Form validation and JavaScript-based interactions.</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h3>My Contribution</h3>
+            <p>
+                Built the application end to end using ASP.NET MVC and C#,
+                designed the SQL Server schema for student and attendance
+                data, and implemented client-side interactions in JavaScript.
+            </p>
+        </div>
+
+        <div class="detail-section">
+            <h3>Architecture & Technologies</h3>
+            <div class="modal-tech">
+                <span>ASP.NET MVC</span>
+                <span>C#</span>
+                <span>SQL Server</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <h3>Technical Highlights</h3>
+            <p>
+                MVC-based backend with C#, SQL Server for persistent storage
+                of academic and attendance data, and JavaScript for dynamic,
+                client-side form interactions.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Fee Management System Modal -->
+<div id="feeProject" class="project-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="feeProjectTitle">
+        <button type="button" class="close-btn" onclick="closeProject('feeProject')" aria-label="Close project details">×</button>
+
+        <div class="modal-number">03 / PROJECT DETAILS</div>
+        <h2 id="feeProjectTitle">Fee Management System</h2>
+
+        <p class="modal-intro">
+            Database-driven application for managing student fees,
+            payments, transactions, receipts and financial reports.
+        </p>
+
+        <div class="detail-section">
+            <h3>Project Overview</h3>
+            <p>
+                A finance-focused module that tracks student fee structures,
+                payments and transactions, and generates receipts and
+                financial reports for administrative use.
+            </p>
+        </div>
+
+        <div class="detail-section">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Fee structure and payment transaction management.</li>
+                <li>Automated receipt generation.</li>
+                <li>Financial reporting via SSRS.</li>
+                <li>Database-driven transaction history.</li>
+                <li>Role-based access for finance staff.</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h3>My Contribution</h3>
+            <p>
+                Developed the backend using C# and ASP.NET, designed the
+                SQL Server database for transactions and receipts, and built
+                SSRS reports for financial summaries.
+            </p>
+        </div>
+
+        <div class="detail-section">
+            <h3>Architecture & Technologies</h3>
+            <div class="modal-tech">
+                <span>C#</span>
+                <span>ASP.NET</span>
+                <span>SQL Server</span>
+                <span>SSRS</span>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <h3>Technical Highlights</h3>
+            <p>
+                Transaction-safe database design in SQL Server, backend
+                logic in C#/ASP.NET, and SSRS-based reporting for accurate
+                financial reconciliation.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Notification Project Details Modal -->
+<div id="notificationProject" class="project-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="notificationProjectTitle">
+        <button type="button" class="close-btn" onclick="closeProject('notificationProject')" aria-label="Close project details">×</button>
+
+        <div class="modal-number">04 / PROJECT DETAILS</div>
+        <h2 id="notificationProjectTitle">Notification & Communication System</h2>
+
+        <p class="modal-intro">
+            Application for sending notifications and managing communication
+            between administrators, staff and users.
+        </p>
+
+        <div class="detail-section">
+            <h3>Project Overview</h3>
+            <p>
+                A centralized communication module used to create, manage and
+                distribute notifications to relevant users. The module supports
+                structured communication between administrators, staff and users.
+            </p>
+        </div>
+
+        <div class="detail-section">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Create and manage notifications.</li>
+                <li>Support communication between administrators, staff and users.</li>
+                <li>Database-driven notification management.</li>
+                <li>Role-based application functionality.</li>
+                <li>JavaScript-based client-side interactions.</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h3>My Contribution</h3>
+            <p>
+                Developed application functionality using ASP.NET and C#,
+                integrated SQL Server database operations and implemented
+                frontend interactions using JavaScript.
+            </p>
+        </div>
+
+        <div class="detail-section">
+            <h3>Architecture & Technologies</h3>
+            <div class="modal-tech">
+                <span>ASP.NET</span>
+                <span>C#</span>
+                <span>SQL Server</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <h3>Technical Highlights</h3>
+            <p>
+                Backend development with ASP.NET and C#, SQL Server integration,
+                role-based functionality and JavaScript client-side interactions.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Reporting & Analytics System Modal -->
+<div id="reportingProject" class="project-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="reportingProjectTitle">
+        <button type="button" class="close-btn" onclick="closeProject('reportingProject')" aria-label="Close project details">×</button>
+
+        <div class="modal-number">05 / PROJECT DETAILS</div>
+        <h2 id="reportingProjectTitle">Reporting & Analytics System</h2>
+
+        <p class="modal-intro">
+            Reporting platform providing structured business reports and
+            analytical information using SQL Server and SSRS.
+        </p>
+
+        <div class="detail-section">
+            <h3>Project Overview</h3>
+            <p>
+                A reporting layer built on top of the core application data,
+                giving administrators structured, exportable reports and
+                analytical views across business and academic operations.
+            </p>
+        </div>
+
+        <div class="detail-section">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Structured business and operational reports.</li>
+                <li>SSRS-based report design and delivery.</li>
+                <li>Query and index optimization for large datasets.</li>
+                <li>Role-based access to sensitive reports.</li>
+                <li>Exportable, parameterized report views.</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h3>My Contribution</h3>
+            <p>
+                Designed SQL Server queries and stored procedures for
+                reporting, built SSRS report definitions and integrated them
+                into the ASP.NET/C# application layer.
+            </p>
+        </div>
+
+        <div class="detail-section">
+            <h3>Architecture & Technologies</h3>
+            <div class="modal-tech">
+                <span>SQL Server</span>
+                <span>SSRS</span>
+                <span>ASP.NET</span>
+                <span>C#</span>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <h3>Technical Highlights</h3>
+            <p>
+                Optimized SQL Server queries and indexing for reporting
+                workloads, with SSRS handling report rendering and ASP.NET/C#
+                handling report access and parameters.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Generic info modal: reused for tech stack, architecture and certification explanations -->
+<div id="infoModal" class="project-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="infoModalTitle">
+        <button type="button" class="close-btn" onclick="closeProject('infoModal')" aria-label="Close explanation">×</button>
+        <div class="modal-tag" id="infoModalTag"></div>
+        <h2 id="infoModalTitle"></h2>
+        <div class="modal-body" id="infoModalBody"></div>
+    </div>
+</div>
+
+<!-- =========================================================
+     PROJECT SECTION CSS
+========================================================= -->
+
+<section id="stack"><div class="wrap">
+  <div class="sectionTag">01 / Technical Stack</div><h2>Full-stack, end to end.</h2>
+  <p class="intro">A technical view of the technologies and practices documented in my professional profile.</p>
+  <div class="grid" style="margin-top:30px">
+    <div class="card" data-info="backend" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('backend')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('backend')}"><div class="icon">⚙️</div><h3>Backend</h3><p class="muted">C# and ASP.NET for web application and REST API development.</p><div class="stack"><span class="tag">C#</span><span class="tag">ASP.NET Core</span><span class="tag">MVC</span><span class="tag">Web API</span></div><span class="info-hint">What this means →</span></div>
+    <div class="card" data-info="frontend" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('frontend')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('frontend')}"><div class="icon">◈</div><h3>Frontend</h3><p class="muted">Responsive interfaces and reusable components.</p><div class="stack"><span class="tag">Angular</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span></div><span class="info-hint">What this means →</span></div>
+    <div class="card" data-info="data" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('data')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('data')}"><div class="icon">▣</div><h3>Data</h3><p class="muted">Database design, optimization and application data access.</p><div class="stack"><span class="tag">SQL Server</span><span class="tag">Entity Framework</span><span class="tag">EF Core</span><span class="tag">Stored Procedures</span></div><span class="info-hint">What this means →</span></div>
+    <div class="card" data-info="cloud" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('cloud')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('cloud')}"><div class="icon">☁</div><h3>Cloud & DevOps</h3><p class="muted">Exposure to cloud and containerization technologies.</p><div class="stack"><span class="tag">Azure</span><span class="tag">Docker</span><span class="tag">Git</span><span class="tag">GitHub</span></div><span class="info-hint">What this means →</span></div>
+    <div class="card" data-info="archPattern" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('archPattern')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('archPattern')}"><div class="icon">⌁</div><h3>Architecture</h3><p class="muted">Working knowledge of scalable application patterns.</p><div class="stack"><span class="tag">Microservices</span><span class="tag">REST</span><span class="tag">RBAC</span><span class="tag">Caching</span></div><span class="info-hint">What this means →</span></div>
+    <div class="card" data-info="quality" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('quality')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('quality')}"><div class="icon">✓</div><h3>Quality</h3><p class="muted">Testing, debugging, performance and Agile/Scrum practices.</p><div class="stack"><span class="tag">xUnit</span><span class="tag">NUnit</span><span class="tag">E2E</span><span class="tag">Stress Testing</span></div><span class="info-hint">What this means →</span></div>
+  </div>
+</div></section>
+
+<section id="architecture"><div class="wrap">
+  <div class="sectionTag">02 / System Architecture</div><h2>How I think about a full-stack system.</h2>
+  <p class="intro">An interactive visual model of the application flow represented by my stack.</p>
+  <div class="arch">
+    <div class="node" data-info="archUser" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('archUser')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('archUser')}"><b>USER</b><small class="muted"><br>Browser / Mobile</small></div><div class="arrow">→</div>
+    <div class="node" data-info="archAngular" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('archAngular')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('archAngular')}"><b>ANGULAR</b><small class="muted"><br>UI / JS</small></div><div class="arrow">→</div>
+    <div class="node" data-info="archApi" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('archApi')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('archApi')}"><b>.NET API</b><small class="muted"><br>C# / REST</small></div>
+  </div>
+  <div class="arch" style="grid-template-columns:1fr 1fr 1fr;max-width:700px;margin-left:auto;margin-right:auto">
+    <div class="node" data-info="archLogic" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('archLogic')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('archLogic')}"><b>BUSINESS LOGIC</b><small class="muted"><br>Services</small></div><div class="arrow">↓</div><div class="node" data-info="archEf" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('archEf')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('archEf')}"><b>ENTITY FRAMEWORK</b><small class="muted"><br>Data Access</small></div>
+  </div>
+  <div class="node" data-info="archSql" tabindex="0" role="button" aria-haspopup="dialog" style="max-width:350px;margin:15px auto 0" onclick="showInfo('archSql')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('archSql')}"><b>SQL SERVER</b><small class="muted"><br>Data / Queries / Indexes</small></div>
+</div></section>
+
+<section id="api"><div class="wrap">
+  <div class="sectionTag">03 / API Explorer</div><h2>Interactive REST API demo.</h2>
+  <p class="intro">A front-end simulation of an API request/response flow. Click SEND to see JSON returned by JavaScript.</p>
+  <div class="card api" style="margin-top:28px">
+    <div class="request"><select id="method"><option>GET</option><option>POST</option></select><input id="endpoint" value="/api/developer/profile"><button class="btn primary" onclick="sendApi()">SEND</button></div>
+    <div class="response" id="response">Ready to send request…</div>
+    <p class="muted" style="margin-top:12px;font-size:12px">Calling a live ASP.NET Core + EF Core API at <code id="apiBaseLabel"></code>. Try <code>/api/projects</code> or <code>/api/certifications</code> too. If the API isn't running, a simulated response is shown instead.</p>
+  </div>
+</div></section>
+
+<!-- Prajna Schools & Colleges - Architecture Section -->
+
+<section id="prajna-architecture" class="wrap">
+    <div class="section-header">
+        <span class="section-tag">04 / PROJECT ARCHITECTURE</span>
+        <h2>Prajna Schools & Colleges</h2>
+        <p>
+            A web-based education management platform designed to manage
+            academic, student, staff, fee, attendance and administrative
+            operations through a centralized application.
+        </p>
+    </div>
+
+<div class="architecture-grid">
+
+    <div class="architecture-card">
+        <div class="architecture-icon">🖥️</div>
+        <h3>Presentation Layer</h3>
+        <p>
+            User-friendly web interfaces for administrators, staff,
+            students and other users.
+        </p>
+        <span>HTML • CSS • JavaScript</span>
+    </div>
+
+    <div class="architecture-card">
+        <div class="architecture-icon">⚙️</div>
+        <h3>Application Layer</h3>
+        <p>
+            Handles business logic, authentication, validations,
+            workflows and communication between the UI and database.
+        </p>
+        <span>ASP.NET MVC • C#</span>
+    </div>
+
+    <div class="architecture-card">
+        <div class="architecture-icon">🗄️</div>
+        <h3>Database Layer</h3>
+        <p>
+            Stores and manages student, staff, academic, fee,
+            attendance and administrative information.
+        </p>
+        <span>SQL Server • Stored Procedures</span>
+    </div>
+
+    <div class="architecture-card">
+        <div class="architecture-icon">🔐</div>
+        <h3>Security & Access</h3>
+        <p>
+            Role-based access ensures users can access only the
+            modules and information relevant to their responsibilities.
+        </p>
+        <span>Authentication • Authorization</span>
+    </div>
+
+</div>
+
+<div class="architecture-flow">
+    <div class="flow-item">👤 User</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-item">🌐 Web UI</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-item">⚙️ ASP.NET MVC</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-item">🗄️ SQL Server</div>
+</div>
+
+</section>
+
+<section id="engineering"><div class="wrap">
+  <div class="sectionTag">05 / Engineering Practices</div><h2>Beyond writing code.</h2>
+  <div class="two" style="margin-top:30px">
+    <div class="card"><h3>Performance</h3>
+      <div class="metric"><div class="metricTop"><span>API optimization</span><span>Focused</span></div><div class="bar"><i style="width:88%"></i></div></div>
+      <div class="metric"><div class="metricTop"><span>Database indexing</span><span>Strong</span></div><div class="bar"><i style="width:91%"></i></div></div>
+      <div class="metric"><div class="metricTop"><span>Caching strategies</span><span>Applied</span></div><div class="bar"><i style="width:82%"></i></div></div>
+      <p class="muted">Experience includes caching, lazy loading, async data fetching and database query/index optimization.</p>
+    </div>
+    <div class="code"><div class="codeHead">DeveloperController.cs · illustrative portfolio snippet</div><pre><span class="v">[HttpGet]</span>
+<span class="v">[Route</span>(<span class="g">"api/projects"</span>)<span class="v">]</span>
+<span class="c">public</span> IActionResult GetProjects()
+{
+    <span class="c">var</span> projects =
+        _projectService.GetProjects();
+
+    <span class="c">return</span> Ok(projects);
+}</pre></div>
+  </div>
+</div></section>
+
+<section id="career"><div  class="wrap">
+  <div class="sectionTag">06 / Career</div><h2>Experience & education.</h2>
+  <div class="timeline" style="margin-top:30px">
+    <div class="event"><div class="date">AUG 2020 — FEB 2025</div><h3>.NET Full Stack Developer · Stepping Stone Software Solutions</h3><p class="muted">Frontend, backend, database, security, testing, performance optimization and collaboration across education-focused applications.</p></div>
+    <div class="event"><div class="date">2019</div><h3>B.Tech — Electrical & Electronics Engineering</h3><p class="muted">Sri Vasavi Engineering College, Tadepalligudem.</p></div>
+    <div class="event"><div class="date">2016</div><h3>Diploma — Electrical & Electronics Engineering</h3><p class="muted">Sri Mullapudi Venkataraya Memorial Polytechnic College, Tanuku.</p></div>
+	<div class="event"><div class="date">2013</div><h3>SSC</h3><p class="muted">Sri Chaitanya Techno School, Tanuku.</p></div>
+  </div>
+</div></section>
+
+<section class="certifications" id="certifications">
+    <div class="section-label">07 / CERTIFICATIONS</div>
+
+    <h2>Continuous learning.</h2>
+
+    <div class="cert-grid">
+
+        <!-- Azure -->
+        <div class="cert-card" data-info="certAzure" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('certAzure')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('certAzure')}">
+
+            <h3>Microsoft Certified: Azure Fundamentals</h3>
+            <p>Cloud fundamentals</p>
+
+            <span class="cert-link">What this covers ↗</span>
+        </div>
+
+
+        <!-- Scrum Master -->
+        <div class="cert-card" data-info="certScrum" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('certScrum')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('certScrum')}">
+
+            <h3>Certified Scrum Master (CSM)</h3>
+            <p>Agile / Scrum</p>
+
+            <span class="cert-link">What this covers ↗</span>
+        </div>
+
+
+        <!-- MongoDB -->
+        <div class="cert-card" data-info="certMongo" tabindex="0" role="button" aria-haspopup="dialog" onclick="showInfo('certMongo')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showInfo('certMongo')}">
+
+            <h3>Introduction to MongoDB</h3>
+            <p>Database technology</p>
+
+            <span class="cert-link">What this covers ↗</span>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+  <div class="sectionTag">08 / Contact</div><h2>Let's build something useful.</h2>
+  <p class="muted">Recruiters and engineering teams can contact me directly.</p>
+  <div class="stack"><a class="tag" href="mailto:tsm8555@gmail.com">✉ tsm8555@gmail.com</a><a class="tag" href="tel:+917680023698">☎ +91 7680023698</a><span class="tag">⌂ Andhra Pradesh, India</span></div>
+  <div class="btns"><a class="btn primary" href="assets/resume/Mahesh_Resume.pdf" target="_blank" download>Download Resume</a><a class="btn" href="mailto:tsm8555@gmail.com?subject=Recruitment%20Opportunity">Email Me</a></div>
+
+  <div class="card" style="margin-top:30px;max-width:560px">
+    <h3 style="margin-top:0">Or send a message directly</h3>
+    <p class="muted" style="margin-top:0">This posts to the same ASP.NET Core API that powers the API Explorer above (<code>POST /api/contact</code>) and stores it in the database.</p>
+    <div style="display:grid;gap:12px;margin-top:16px">
+      <input id="cName" placeholder="Your name" style="background:#070d1d;border:1px solid var(--line);color:var(--text);padding:11px;border-radius:9px">
+      <input id="cEmail" type="email" placeholder="Your email" style="background:#070d1d;border:1px solid var(--line);color:var(--text);padding:11px;border-radius:9px">
+      <textarea id="cMessage" rows="4" placeholder="Message" style="background:#070d1d;border:1px solid var(--line);color:var(--text);padding:11px;border-radius:9px;font-family:inherit;resize:vertical"></textarea>
+      <button type="button" class="btn primary" onclick="sendContact()" style="justify-self:start">Send Message</button>
+      <p id="contactStatus" class="muted" style="margin:0;font-size:12px;min-height:16px"></p>
+    </div>
+  </div>
+</div></div></section>
+</main>
+<footer><div class="wrap">© 2026 Sai Mahesh Talabattula · .NET Full Stack Developer</div></footer>
+
+<script>
+const code=`const developer = {
+  name: "Sai Mahesh Talabattula",
+  role: ".NET Full Stack Developer",
+  experience: "5+ years",
+  backend: ["C#", "ASP.NET", "Web API"],
+  frontend: ["Angular", "JavaScript"],
+  database: ["SQL Server", "Entity Framework"],
+  cloud: ["Azure"],
+  devops: ["Git", "Docker"]
+};
+
+developer.build();`;
+let i=0;const typed=document.getElementById("typed");
+function typeCode(){if(i<code.length){typed.textContent+=code[i++];setTimeout(typeCode,12)}}
+setTimeout(typeCode,500);
+
+const API_BASE = "https://localhost:5443"; // matches launchSettings.json in PortfolioApi — change if you run on a different port
+document.getElementById("apiBaseLabel").textContent = API_BASE;
+
+function sendApi(){
+ const box=document.getElementById("response");
+ const method=document.getElementById("method").value;
+ const endpoint=document.getElementById("endpoint").value;
+ box.textContent="Sending request…";
+
+ fetch(API_BASE + endpoint, { method })
+   .then(res => res.json().then(data => ({ ok: res.ok, status: res.status, data })))
+   .then(({ status, data }) => {
+     box.textContent = JSON.stringify({ status, ...data }, null, 2);
+   })
+   .catch(() => {
+     // Backend not running (or blocked by CORS/HTTPS cert) — fall back to a
+     // simulated response so the demo still works while you start the API.
+     box.textContent = JSON.stringify({
+       status: 200,
+       note: "Simulated response — start PortfolioApi (dotnet run) for live data.",
+       endpoint,
+       developer: "Sai Mahesh Talabattula",
+       role: ".NET Full Stack Developer",
+       experience: "5+ years",
+       stack: ["C#", "ASP.NET", "Angular", "SQL Server", "Azure"]
+     }, null, 2);
+   });
+}
+
+const INFO_DATA = {
+  backend: {
+    tag: "Technical stack",
+    title: "Backend",
+    body: `<p>The backend is the part of the application that runs on the server: it receives requests, applies business rules, talks to the database and sends back a response. Nothing here is visible to the user directly — it's the engine behind the interface.</p>
+    <ul>
+      <li><b>C#</b> — the programming language used to write the application's logic.</li>
+      <li><b>ASP.NET Core</b> — the framework used to build the web application and its APIs.</li>
+      <li><b>MVC</b> — a pattern that separates data (Model), screens (View) and logic (Controller) so the codebase stays organized as it grows.</li>
+      <li><b>Web API</b> — the layer that exposes data and actions as endpoints a frontend (or another system) can call.</li>
+    </ul>`
+  },
+  frontend: {
+    tag: "Technical stack",
+    title: "Frontend",
+    body: `<p>The frontend is everything the user sees and interacts with in the browser — pages, forms, buttons and the responses to their clicks.</p>
+    <ul>
+      <li><b>Angular</b> — a framework for building structured, component-based user interfaces.</li>
+      <li><b>JavaScript</b> — the language that makes pages interactive (validation, dynamic updates, API calls).</li>
+      <li><b>HTML / CSS</b> — the structure and visual styling of every page.</li>
+      <li><b>Bootstrap</b> — a component library used to build responsive layouts faster.</li>
+    </ul>`
+  },
+  data: {
+    tag: "Technical stack",
+    title: "Data",
+    body: `<p>This covers how the application stores information permanently and reads it back efficiently — the difference between an app that works and one that stays fast as data grows.</p>
+    <ul>
+      <li><b>SQL Server</b> — the relational database that stores all application data.</li>
+      <li><b>Entity Framework / EF Core</b> — a tool that lets the backend read and write database records using C# objects instead of raw SQL.</li>
+      <li><b>Stored Procedures</b> — pre-written, reusable database queries used for performance-sensitive or shared operations.</li>
+    </ul>`
+  },
+  cloud: {
+    tag: "Technical stack",
+    title: "Cloud & DevOps",
+    body: `<p>This is the tooling used to host, ship and version an application reliably, rather than running it from a single machine.</p>
+    <ul>
+      <li><b>Azure</b> — Microsoft's cloud platform, used for hosting and managing web applications.</li>
+      <li><b>Docker</b> — packages an application with everything it needs so it runs the same way everywhere.</li>
+      <li><b>Git / GitHub</b> — version control used to track changes and collaborate on code safely.</li>
+    </ul>`
+  },
+  archPattern: {
+    tag: "Technical stack",
+    title: "Architecture",
+    body: `<p>These are structural patterns that keep a growing application maintainable, secure and fast.</p>
+    <ul>
+      <li><b>Microservices</b> — splitting an application into smaller, independent services instead of one large program.</li>
+      <li><b>REST</b> — a standard way for the frontend and backend to communicate over HTTP.</li>
+      <li><b>RBAC (Role-Based Access Control)</b> — restricting what each user can see or do based on their role.</li>
+      <li><b>Caching</b> — temporarily storing frequently used data so it doesn't need to be recalculated or re-fetched every time.</li>
+    </ul>`
+  },
+  quality: {
+    tag: "Technical stack",
+    title: "Quality",
+    body: `<p>Quality practices are what make sure the application actually works correctly before — and after — it reaches users.</p>
+    <ul>
+      <li><b>xUnit / NUnit</b> — testing frameworks used to write automated unit tests for C# code.</li>
+      <li><b>E2E (End-to-End) testing</b> — testing a full user flow from start to finish, as a real user would experience it.</li>
+      <li><b>Stress testing</b> — checking how the application behaves under heavy load, to catch performance issues early.</li>
+    </ul>`
+  },
+  archUser: {
+    tag: "System architecture",
+    title: "User",
+    body: `<p>Every request starts here: a person using a web browser or mobile device. The user's actions — clicking a button, submitting a form — are what trigger everything else in the flow.</p>`
+  },
+  archAngular: {
+    tag: "System architecture",
+    title: "Angular (UI layer)",
+    body: `<p>Angular renders the interface the user sees and captures their input. When the user does something that needs data, Angular sends an HTTP request to the .NET API rather than talking to the database directly — keeping the interface and the business logic cleanly separated.</p>`
+  },
+  archApi: {
+    tag: "System architecture",
+    title: ".NET API",
+    body: `<p>The ASP.NET Web API layer receives requests from the frontend, checks that the user is allowed to perform the action, and routes the request to the appropriate business logic. It's the single entry point into the server-side application.</p>`
+  },
+  archLogic: {
+    tag: "System architecture",
+    title: "Business logic",
+    body: `<p>This is where the application's actual rules live — validation, calculations, workflow steps. Keeping this separate from both the UI and the database means the same logic can be reused and tested independently of how it's displayed or stored.</p>`
+  },
+  archEf: {
+    tag: "System architecture",
+    title: "Entity Framework",
+    body: `<p>Entity Framework is the data-access layer: it translates C# code into SQL queries and maps database rows back into C# objects, so the business logic can work with data without writing raw SQL for every operation.</p>`
+  },
+  archSql: {
+    tag: "System architecture",
+    title: "SQL Server",
+    body: `<p>SQL Server is where all data is permanently stored — user records, transactions, reports. Indexes and optimized queries here directly determine how fast the whole application feels to the end user.</p>`
+  },
+  certAzure: {
+    tag: "Certification",
+    title: "Microsoft Certified: Azure Fundamentals",
+    body: `<p>This certification validates foundational knowledge of Microsoft Azure — core cloud concepts (compute, storage, networking), pricing and support models, and the basics of governance and compliance in the cloud.</p>
+    <p>Relevance to my work: it supports deploying and reasoning about .NET applications hosted on Azure infrastructure.</p>
+    <p><a href="assets/certs/Azure.pdf" target="_blank" rel="noopener noreferrer" style="color:var(--cyan)">Open certificate file ↗</a></p>`
+  },
+  certScrum: {
+    tag: "Certification",
+    title: "Certified Scrum Master (CSM)",
+    body: `<p>This certification covers the Scrum framework for Agile software delivery — sprint planning, daily stand-ups, backlog management and retrospectives — and the role of a Scrum Master in removing blockers and keeping a team focused.</p>
+    <p>Relevance to my work: applied on real project teams to plan iterations and coordinate delivery with stakeholders.</p>
+    <p><a href="assets/certs/SCRUM.pdf" target="_blank" rel="noopener noreferrer" style="color:var(--cyan)">Open certificate file ↗</a></p>`
+  },
+  certMongo: {
+    tag: "Certification",
+    title: "Introduction to MongoDB",
+    body: `<p>This certification covers the fundamentals of MongoDB, a NoSQL document database — how it stores data as flexible JSON-like documents rather than fixed tables, and when that model fits better than a relational database like SQL Server.</p>
+    <p>Relevance to my work: broadens my data layer knowledge beyond relational databases for projects that need flexible schemas.</p>
+    <p><a href="assets/certs/MongoDB.pdf" target="_blank" rel="noopener noreferrer" style="color:var(--cyan)">Open certificate file ↗</a></p>`
+  }
+};
+
+function showInfo(id) {
+  const data = INFO_DATA[id];
+  if (!data) return;
+  document.getElementById("infoModalTag").textContent = data.tag;
+  document.getElementById("infoModalTitle").textContent = data.title;
+  document.getElementById("infoModalBody").innerHTML = data.body;
+  openProject("infoModal");
+}
+
+function sendContact(){
+ const name = document.getElementById("cName").value.trim();
+ const email = document.getElementById("cEmail").value.trim();
+ const message = document.getElementById("cMessage").value.trim();
+ const status = document.getElementById("contactStatus");
+
+ if(!name || !email || message.length < 5){
+   status.textContent = "Please fill in your name, email and a short message.";
+   status.style.color = "var(--danger)";
+   return;
+ }
+
+ status.textContent = "Sending…";
+ status.style.color = "";
+
+ fetch(API_BASE + "/api/contact", {
+   method: "POST",
+   headers: { "Content-Type": "application/json" },
+   body: JSON.stringify({ name, email, message })
+ })
+ .then(res => res.json().then(data => ({ ok: res.ok, data })))
+ .then(({ ok, data }) => {
+   status.style.color = ok ? "var(--green)" : "var(--danger)";
+   status.textContent = ok ? data.message : "Something went wrong — please email me directly instead.";
+   if (ok) {
+     document.getElementById("cName").value = "";
+     document.getElementById("cEmail").value = "";
+     document.getElementById("cMessage").value = "";
+   }
+ })
+ .catch(() => {
+   status.style.color = "var(--danger)";
+   status.textContent = "Couldn't reach the API — make sure PortfolioApi is running, or email me directly.";
+ });
+}
+
+function openProject(projectId) {
+    const modal = document.getElementById(projectId);
+    if (!modal) return;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+}
+
+function closeProject(projectId) {
+    const modal = document.getElementById(projectId);
+    if (!modal) return;
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
+document.addEventListener("click", function(event) {
+    document.querySelectorAll(".project-modal.open").forEach(function(modal) {
+        if (event.target === modal) {
+            closeProject(modal.id);
+        }
+    });
+});
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        document.querySelectorAll(".project-modal.open").forEach(function(modal) {
+            closeProject(modal.id);
+        });
+    }
+});
+</script>
+</body>
+</html>
